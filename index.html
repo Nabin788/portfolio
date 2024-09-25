@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
@@ -18,9 +18,9 @@
     </loading>
     <header>
         <div class="profile">
-            <div class="img-container">
-                <img class="profile-img" src="./icons/nabin.jpg" alt="Loading..">
-            </div>
+            <picture class="img-container">
+                <img class="profile-img" src="./icons/nabin.webp" alt="Loading..">
+            </picture>
             <h1>Nabin Poudel</h1>
         </div>
         <nav>
@@ -36,20 +36,20 @@
     <section class="project-container">
         <div class="project-list">
         </div>
-        <!-- <div class="sourceCode">
+        <div class="sourceCode">
             <h4>Want Source Code:</h4>
             <a href="https://github.com/Nabin788" target="_blank">
-                <img class="source-icon" src="./icons/source-code.png" alt="Source code img is loading..">
+                <img class="source-icon" src="./icons/source-code.webp" alt="Source code img is loading..">
             </a>
-        </div> -->
+        </div>
     </section>
 
     <template class="project-items">
         <section class="project-item">
             <div class="img-name">
                 <h2>Project Name</h2>
-                <div class="img-container">
-                    <img class="project-img" src="" alt="project-img is loading..">
+                <div class="project-img-container">
+                    <img class="project-img" src="" alt="project-img is loading.." loading="lazy">
                 </div>
                 <button class="liveCode-btn">
                     <a class="project-link" href="" target="_blank">Live Project</a>
@@ -75,11 +75,11 @@
                     <div class="name-email">
                         <div class="name">
                             <input type="text" id="name" name="name" class="nameEmail" placeholder="Enter Your Name"
-                                required>
+                                autocomplete="name" required>
                         </div>
                         <div class="email">
                             <input type="email, tel" id="email-contact" name="email-cotact" class="nameEmail"
-                                placeholder="Enter Your Email or Phone number" required>
+                                placeholder="Enter Your Email or Phone number" autocomplete="off" required>
                         </div>
                     </div>
                     <div class="contact-message">
@@ -94,32 +94,31 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d902.6722036025226!2d82.7606253196002!3d27.840496748506652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d27.8406181!2d82.7612843!4m3!3m2!1d27.840426899999997!2d82.76116929999999!5e1!3m2!1sen!2snp!4v1727003336059!5m2!1sen!2snp"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" title="my Location"></iframe>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="tech-lang">
-            <div class="social-media">
-                <a href="https://github.com/Nabin788" target="_blank">
-                    <img class="social-icon" src="./icons/github.png" alt="Loading..">
-                </a>
-                <a href="https://www.facebook.com/nabbin.poudel.31" target="_blank">
-                    <img class="social-icon" src="./icons/facebook.png" alt="Loading..">
-                </a>
-                <a href="https://www.linkedin.com/in/nabin-poudel-10150a320/" target="_blank">
-                    <img class="social-icon" src="./icons/linkedin.png" alt="Loading..">
-                </a>
-                <a href="https://www.twitter.com/" target="_blank">
-                    <img class="social-icon" src="./icons/twitter.png" alt="Loading..">
-                </a>
-            </div>
-            <p>&copy; 2024 Nabin Poudel. All Rights Reserved.</p>
+            <a href="https://github.com/Nabin788" target="_blank">
+                <img class="social-icon" src="./icons/github.webp" alt="Loading..">
+            </a>
+            <a href="https://www.facebook.com/nabbin.poudel.31" target="_blank">
+                <img class="social-icon" src="./icons/facebook.webp" alt="Loading..">
+            </a>
+            <a href="https://www.linkedin.com/in/nabin-poudel-10150a320/" target="_blank">
+                <img class="social-icon" src="./icons/linkedin.webp" alt="Loading..">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img class="social-icon" src="./icons/twitter.webp" alt="Loading..">
+            </a>
         </div>
+        <p>&copy; 2024 Nabin Poudel. All Rights Reserved.</p>
+
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 
 </body>
 

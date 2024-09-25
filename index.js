@@ -6,6 +6,8 @@ const contactSection = document.querySelector(".section-contact");
 const navList = document.querySelector(".nav-list");
 const template = document.querySelector(".project-items");
 const displayTemplate = document.querySelector(".project-list");
+const project = document.querySelector(".sourceCode");
+
 
 // Function to display the template
 const templateApi = async () => {
@@ -13,6 +15,7 @@ const templateApi = async () => {
         const response = await fetch("./project.json");
         if (!response.ok) throw new Error('Network response was not ok');
         const productData = await response.json();
+        const fragment = document.createDocumentFragment();
         productData.forEach(projectInfo => {
             const { project, description, image, link } = projectInfo;
             const templateClone = document.importNode(template.content, true);
@@ -20,8 +23,9 @@ const templateApi = async () => {
             templateClone.querySelector(".description").innerText = description;
             templateClone.querySelector(".project-img").src = image;
             templateClone.querySelector(".project-link").href = link;
-            displayTemplate.append(templateClone);
+            fragment.appendChild(templateClone);
         });
+        displayTemplate.appendChild(fragment);
     } catch (err) {
         console.log("Failed to fetch file");
         console.error(err);
@@ -72,8 +76,10 @@ const handleNavClick = (event) => {
     } else if (navItemText === "Projects") {
         displayTemplate.style.display = "block";
         contactSection.style.display = "none";
+        project.style.display = "flex";
     } else {
         displayTemplate.style.display = "none";
+        project.style.display = "none";
         contactSection.style.display = "none";
     }
 };
@@ -86,6 +92,7 @@ const initPageDisplay = () => {
     } else if (window.location.hash === "#project"){
         displayTemplate.style.display = "block";
         contactSection.style.display = "none";
+        project.style.display = "flex";
     }
 };
 
