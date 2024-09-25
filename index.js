@@ -5,7 +5,7 @@ const footer = document.querySelector("footer");
 const contactSection = document.querySelector(".section-contact");
 const navList = document.querySelector(".nav-list");
 const template = document.querySelector(".project-items");
-const displayTemplate = document.querySelector(".project-container");
+const displayTemplate = document.querySelector(".project-list");
 
 // Function to display the template
 const templateApi = async () => {
