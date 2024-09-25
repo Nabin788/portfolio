@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <meta name="description" content="Nabin Poudel Portfolio website.">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <loading class="welcome-page">
+        <p class="welcome-text">Welcome</p>
+    </loading>
+    <header>
+        <div class="profile">
+            <div class="img-container">
+                <img class="profile-img" src="./icons/nabin.jpg" alt="Loading..">
+            </div>
+            <h1>Nabin Poudel</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#about">About me</a></li>
+                <li><a class="nav-link" href="#project">Projects</a></li>
+                <li><a class="nav-link" href="#resume">Resume</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-container">
+        <div class="project-list">
+        </div>
+        <!-- <div class="sourceCode">
+            <h4>Want Source Code:</h4>
+            <a href="https://github.com/Nabin788" target="_blank">
+                <img class="source-icon" src="./icons/source-code.png" alt="Source code img is loading..">
+            </a>
+        </div> -->
+    </section>
+
+    <template class="project-items">
+        <section class="project-item">
+            <div class="img-name">
+                <h2>Project Name</h2>
+                <div class="img-container">
+                    <img class="project-img" src="" alt="project-img is loading..">
+                </div>
+            </div>
+            <div class="project-description">
+                <h3>About Project</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia explicabo cum
+                    quaerat? Consequatur
+                    dolorem, molestias magni mollitia adipisci animi laborum, veniam ipsam totam dicta dolores ipsum
+                    nihil!
+                    Sint ab dolores temporibus suscipit placeat voluptatum quasi necessitatibus expedita, rem in eum
+                    iste
+                    libero provident accusantium modi. Voluptatum mollitia molestiae corporis non!</p>
+                <button class="liveCode-btn">
+                    <a class="project-link" href="" target="_blank">Live Project</a>
+                </button>
+            </div>
+        </section>
+    </template>
+
+    <section class="section-contact">
+        <div class="contact-container" id="contact">
+            <div class="contact-form">
+                <form class="form" action="send" method="POST">
+                    <div class="name-email">
+                        <div class="name">
+                            <input type="text" id="name" name="name" class="nameEmail" placeholder="Enter Your Name"
+                                required>
+                        </div>
+                        <div class="email">
+                            <input type="email, tel" id="email-contact" name="email-cotact" class="nameEmail"
+                                placeholder="Enter Your Email or Phone number" required>
+                        </div>
+                    </div>
+                    <div class="contact-message">
+                        <textarea name="message" placeholder="Tell us what you want?" required></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" id="submit-btn" class="btn-submit">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d902.6722036025226!2d82.7606253196002!3d27.840496748506652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d27.8406181!2d82.7612843!4m3!3m2!1d27.840426899999997!2d82.76116929999999!5e1!3m2!1sen!2snp!4v1727003336059!5m2!1sen!2snp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="tech-lang">
+            <div class="social-media">
+                <a href="https://github.com/Nabin788" target="_blank">>
+                    <img class="social-icon" src="./icons/github.png" alt="Loading..">
+                </a>
+                <a href="https://www.facebook.com/nabbin.poudel.31" target="_blank">>
+                    <img class="social-icon" src="./icons/facebook.png" alt="Loading..">
+                </a>
+                <a href="https://www.linkedin.com/in/nabin-poudel-10150a320/" target="_blank">>
+                    <img class="social-icon" src="./icons/linkedin.png" alt="Loading..">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">>
+                    <img class="social-icon" src="./icons/twitter.png" alt="Loading..">
+                </a>
+            </div>
+            <p>&copy; 2024 Nabin Poudel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

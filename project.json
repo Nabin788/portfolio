@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "project": "Gradient Generate",
+        "description": "Gradient Generator using HTML, CSS, and JavaScript that allows users to create and customize beautiful gradients effortlessly. The application features an intuitive user interface where users can select multiple colors and preview the gradient in real-time. With the ability to copy the CSS code for the generated gradients, users can easily implement their designs into web projects.",
+        "image": "./projects-img/gradient.png",
+        "link": "https://nabin788.github.io/gradientGenerator/"
+    },
+    {
+        "id": 2,
+        "project": "khanal Shop",
+        "description": "KhanaShop, a dynamic e-commerce application using HTML, CSS, and JavaScript that enhances the online shopping experience for mobile products. The project features a JSON file that contains detailed data about mobile items, including product names, prices, images, and descriptions. This data is fetched dynamically and displayed in the app, allowing for easy updates and management. Users can browse through the product listings, add items to their shopping cart, and adjust quantities in real-time. The application incorporates responsive design principles to ensure a seamless user experience across different devices.",
+        "image": "./projects-img/khanal.png",
+        "link": "https://nabin788.github.io/khanalShop/"
+    },
+    {
+        "id": 3,
+        "project": "Weather App",
+        "description": "Weather App using HTML, CSS, and JavaScript that allows users to check real-time weather conditions for any location. The app features an intuitive interface where users can input a city name to receive detailed weather information, including temperature, humidity, and overall conditions. Utilizing a weather API for accurate data retrieval, the application displays the results dynamically and updates the UI seamlessly.",
+        "image": "./projects-img/nodeWeather.png",
+        "link": "https://nabin788.github.io/weather/"
+    },
+    {
+        "id": 4,
+        "project": "nodejs Weather App",
+        "description": "Weather App using Node.js and Handlebars that provides users with real-time weather information based on their location. The application features a user-friendly interface where users can enter their city name to retrieve current weather data, including temperature, humidity, and weather conditions. Leveraging API integration for reliable weather data, the app displays the information in a visually appealing format.",
+        "image": "./projects-img/weather.png",
+        "link": "https://nodeweather-app.onrender.com"
+    }
+]
