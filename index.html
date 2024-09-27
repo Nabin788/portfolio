@@ -13,9 +13,13 @@
 </head>
 
 <body>
+    <!-- Loading page -->
     <loading class="welcome-page">
         <p class="welcome-text">Welcome</p>
     </loading>
+    <!-- Loading page -->
+
+    <!-- page header -->
     <header>
         <div class="profile">
             <picture class="img-container">
@@ -25,29 +29,65 @@
         </div>
         <nav>
             <ul class="nav-list">
+                <li><a class="nav-link" href="">Home</a></li>
                 <li><a class="nav-link" href="#about">About me</a></li>
                 <li><a class="nav-link" href="#project">Projects</a></li>
-                <li><a class="nav-link" href="#resume">Resume</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <!-- page header -->
 
-    <section class="project-container">
-        <div class="project-list">
+    <!-- Home section -->
+    <section class="home-section">
+        <div class="my-img">
+            <picture>
+                <img class="myHome-img" src="./icons/nabin.webp" alt="My image is loading. Please wait..">
+            </picture>
         </div>
-        <div class="sourceCode">
-            <h4>Want Source Code:</h4>
-            <a href="https://github.com/Nabin788" target="_blank">
-                <img class="source-icon" src="./icons/source-code.webp" alt="Source code img is loading..">
-            </a>
+        <div class="myInfo-container">
+            <div class="my-info">
+                <div class="info">
+                    <p>Hello, Is's Me</p>
+                    <h2>Nabin Poudel</h2>
+                    <p>and I'm a Web Developer</p>
+                </div>
+                <div class="myShort-description">
+                    <span>Enthusiastic and detail-oriented Software Developer with a strong foundation in computer
+                        science.
+                        Proficient in HTML, CSS, JavaScript, and experienced with MongoDB, Node.js, and Express.js.
+                        Passionate
+                        about coding, problem-solving, and continuously learning new technologies.</span>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/Nabin788" target="_blank">
+                    <img class="social-icon" src="./icons/github.webp" alt="Loading..">
+                </a>
+                <a href="https://www.facebook.com/nabbin.poudel.31" target="_blank">
+                    <img class="social-icon" src="./icons/facebook.webp" alt="Loading..">
+                </a>
+                <a href="https://www.linkedin.com/in/nabin-poudel-10150a320/" target="_blank">
+                    <img class="social-icon" src="./icons/linkedin.webp" alt="Loading..">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img class="social-icon" src="./icons/twitter.webp" alt="Loading..">
+                </a>
+            </div>
+            <div class="about-page">
+                <button class="about-btn">
+                    <a href="#about">More about me</a>
+                </button>
+            </div>
         </div>
     </section>
+    <!-- Home section -->
 
+    <!-- project page -->
     <template class="project-items">
         <section class="project-item">
             <div class="img-name">
-                <h2>Project Name</h2>
+                <h3>Project Name</h3>
                 <div class="project-img-container">
                     <img class="project-img" src="" alt="project-img is loading.." loading="lazy">
                 </div>
@@ -56,7 +96,7 @@
                 </button>
             </div>
             <div class="project-description">
-                <h3>About Project</h3>
+                <h4>About Project</h4>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia explicabo cum
                     quaerat? Consequatur
                     dolorem, molestias magni mollitia adipisci animi laborum, veniam ipsam totam dicta dolores ipsum
@@ -68,6 +108,19 @@
         </section>
     </template>
 
+    <section class="project-container">
+        <div class="project-list">
+        </div>
+        <div class="sourceCode">
+            <h5>Want Source Code:</h5>
+            <a href="https://github.com/Nabin788" target="_blank">
+                <img class="source-icon" src="./icons/source-code.webp" alt="Source code img is loading..">
+            </a>
+        </div>
+    </section>
+    <!-- project page -->
+
+    <!-- contact page -->
     <section class="section-contact">
         <div class="contact-container" id="contact">
             <div class="contact-form">
@@ -98,25 +151,13 @@
             </div>
         </div>
     </section>
+    <!-- contact page -->
 
+    <!-- footer section -->
     <footer>
-        <div class="tech-lang">
-            <a href="https://github.com/Nabin788" target="_blank">
-                <img class="social-icon" src="./icons/github.webp" alt="Loading..">
-            </a>
-            <a href="https://www.facebook.com/nabbin.poudel.31" target="_blank">
-                <img class="social-icon" src="./icons/facebook.webp" alt="Loading..">
-            </a>
-            <a href="https://www.linkedin.com/in/nabin-poudel-10150a320/" target="_blank">
-                <img class="social-icon" src="./icons/linkedin.webp" alt="Loading..">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img class="social-icon" src="./icons/twitter.webp" alt="Loading..">
-            </a>
-        </div>
         <p>&copy; 2024 Nabin Poudel. All Rights Reserved.</p>
-
     </footer>
+    <!-- footer section -->
 
     <script src="./index.js" defer></script>
 
